@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler custom-icon" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#welcome-section" class="normal-btn" aria-label="Go to Home Page">
+                            <i class="bi bi-house-door-fill h3 icon-center"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="normal-btn" aria-label="Go to Projects">
+                            <i class="bi bi-pc-display h3 icon-center"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="normal-btn" aria-label="About Me">
+                            <i class="bi bi-person-fill h3 icon-center"></i>About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="normal-btn" aria-label="Go to Contact">
+                            <i class="bi bi-person-fill h3 icon-center"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="welcome-section">
+        <h1>Ignacio Albiol</h1>
+        <h5 class="under-text">Game and Web Developer.</h5>
+        <img src="./img/portrait2.jpg" class="home-img-medium" alt="Portfolio image" loading="lazy" />
+        <div class="container">
+            <a href="https://www.linkedin.com/in/ignacio-albiol/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn Profile of Ignacio Albiol" id="profile-link">
+                <i class="bi bi-linkedin header-icon"></i></a>
+            <a href="https://github.com/nachoa88" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub Profile of Ignacio Albiol" id="profile-link">
+                <i class="bi bi-github header-icon"></i></a>
+        </div>
+        <div class="button-container">
+            <button class="normal-btn">
+                <i class="bi bi-download"></i>
+                <span class="button-text">Download Resume</span>
+            </button>
+        </div>
+    </header>
+
+
+    <div class="portfolio" id="projects">
+        <h2 class="project-tile">Projects</h2>
+        <hr />
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/pokedex.jpg" class="card-img-top" alt="Sample of konect project" loading="lazy" />
+                    <div class="card-body">
+                        <p class="card-title">Pokédex - PokéAPI</p>
+                        <p class="card-text">Pokédex created in React, using the PokeAPI to obtain the information of
+                            the Pokémon. You can search by name or type, and by clicking on each one, detailed
+                            information about it is displayed.</p>
+                        <a href="https://pokedex-iap.netlify.app/" target="_blank" rel="noopener noreferrer"
+                            class="normal-btn small-btn"><i class="fas fa-link card-icon"></i>Visit Site</a>
+                        <a href="https://github.com/nachoa88/Pokedex-PokeAPI" target="_blank" rel="noopener noreferrer"
+                            class="normal-btn small-btn">
+                            <i class="fab fa-github card-icon"></i>Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/konecta.jpg" class="card-img-top" alt="Sample of konect project" loading="lazy" />
+                    <div class="card-body">
+                        <p class="card-title">K0N3CT4</p>
+                        <p class="card-text">This project was made with my group during the Web Development Course.
+                            Front-end was made in React and back-end with Spring Boot, using AWS for our servers,
+                            databases and storage.</p>
+                        <a href="..." class="normal-btn small-btn"><i class="fas fa-link card-icon"></i>Learn More</a>
+                        <a href="https://github.com/nachoa88/KoNeCTaReact" target="_blank" rel="noopener noreferrer"
+                            class="normal-btn small-btn">
+                            <i class="fab fa-github card-icon"></i>Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/laphotography.jpg" class="card-img-top" alt="Sample of photography portfolio"
+                        loading="lazy" />
+                    <div class="card-body">
+                        <p class="card-title">Photography Portfolio</p>
+                        <p class="card-text">This project was made for a photographer friend of mine, it's a portfolio
+                            of his work. I was done using Wordpress and Elementor's plugin, it was my first approach to
+                            this tools.</p>
+                        <a to="..." class="normal-btn small-btn"><i class="fas fa-link card-icon"></i>Learn More</a>
+                        <a href="https://laphotography.es/" target="_blank" rel="noopener noreferrer"
+                            class="normal-btn small-btn">
+                            <i class="fas fa-link card-icon"></i>Visit Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/tilevania.jpg" class="card-img-top" alt="Sample of Tile Vania" loading="lazy" />
+                    <div class="card-body">
+                        <p class="card-title">Game: Tile Vania</p>
+                        <p class="card-text">Project for the GameDev.tv Team course, created with C# in Unity 2D. In
+                            this platform game, the player must go through the levels, face enemies and collect as many
+                            coins as possible.</p>
+                        <a href="https://sharemygame.com/@nachoa88/tilevania" target="_blank" rel="noopener noreferrer"
+                            class="normal-btn small-btn">
+                            <i class="fas fa-link card-icon"></i>Play Game</a>
+                        <a href="https://github.com/nachoa88/TileVania" target="_blank" rel="noopener noreferrer"
+                            class="normal-btn small-btn">
+                            <i class="fab fa-github card-icon"></i>Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/project-boost.jpg" class="card-img-top" alt="Sample of Space-Boost" loading="lazy" />
+                    <div class="card-body">
+                        <p class="card-title">Game: Space-Boost</p>
+                        <p class="card-text">Project for the GameDev.tv Team course, created with C# in Unity 3D using
+                            only primary shapes. The player must reach the destination platform facing different
+                            obstacles, the faster, the more points he will score.</p>
+                        <a href="https://sharemygame.com/@nachoa88/project-boost-prototype" target="_blank"
+                            rel="noopener noreferrer" class="normal-btn small-btn">
+                            <i class="fas fa-link card-icon"></i>Play Game</a>
+                        <a href="https://github.com/nachoa88/SpaceBoost-Prototype" target="_blank"
+                            rel="noopener noreferrer" class="normal-btn small-btn">
+                            <i class="fab fa-github card-icon"></i>Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="about-me" id="about">
+        <h2>About Me</h2>
+        <hr />
+        <div id="about-text">
+            <p>My name is Ignacio Albiol, I'm a game & web developer and I live in Barcelona. Over the past few years, I
+                have undergone a professional transition, moving from the educational sector to the world of programming
+                and development. I started my journey by learning Unity and C# on my own, and later, I consolidated my
+                skills with an integral full-stack web development course.</p>
+            <p>In terms of my interpersonal skills, I consider myself a serious, responsible, determined and
+                hard-working person. I enjoy diving into diverse projects and I've learned to work effectively in teams,
+                extracting the best from collaboration with my colleagues. Additionally, I am patient and resilient, key
+                qualities in the world of development, which I have perfectionated throughout my professional career as
+                an educator.</p>
+            <p>Currently, I am committed to continuous growth and learning in these exciting areas. Excited about the
+                future, and ready to contribute with my experience to the development of new projects.</p>
+        </div>
+        <h3>My Skills</h3>
+        <hr />
+        <div class="row">
+            <p class="skill-title w3-wide">Front-End</p>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/html5_icon.png" alt="HTML5 icon" />
+                    <p class="skill-text">HTML5</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/css3_icon.png" alt="CSS icon" />
+                    <p class="skill-text">CSS</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/javascript_icon.png" alt="JavaScript icon" />
+                    <p class="skill-text">JavaScript</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/react_icon.png" alt="React icon" />
+                    <p class="skill-text">React</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/bootstrap_icon.png" alt="Bootstrap icon" />
+                    <p class="skill-text">Bootstrap</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <p class="skill-title w3-wide">Back-End</p>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/mysql_icon.png" alt="MySQL icon" />
+                    <p class="skill-text">MySQL</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/postman_icon.png" alt="Postman icon" />
+                    <p class="skill-text">Postman</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/java_icon.png" alt="Java icon" />
+                    <p class="skill-text">Java</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/spring_boot_icon.png" alt="Spring Boot icon" />
+                    <p class="skill-text">Spring Boot</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <p class="skill-title w3-wide">Game Development</p>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/csharp_icon.png" alt="C Sharp icon" />
+                    <p class="skill-text">C#</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/unity_icon.png" alt="Unity icon" />
+                    <p class="skill-text">Unity 2D & 3D</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="skill-title w3-wide">Web Design</p>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/wordpress_icon.png" alt="Wordpress icon" />
+                    <p class="skill-text">Wordpress</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/elementor_icon.png" alt="Elementor icon" />
+                    <p class="skill-text">Elementor</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/figma_icon.png" alt="Figma icon" />
+                    <p class="skill-text">Figma</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="skill-title w3-wide">Other Skills</p>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/github_icon.png" alt="GitHub icon" />
+                    <p class="skill-text">GitHub</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/aws_icon.png" alt="HTML5 icon" />
+                    <p class="skill-text">Amazon Web Services</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/trello_icon.png" alt="Trello icon" />
+                    <p class="skill-text">Trello</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/ubuntu_icon.png" alt="Ubuntu icon" />
+                    <p class="skill-text">Ubuntu 22.04</p>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-3 col-sm-4 col-4">
+                <div class="icon-container">
+                    <img class="iconImg" src="img/icons/agile_dev_icon.png" alt="Agile Methodology icon" />
+                    <p class="skill-text">Agile Methodology</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact-me" id="contact">
+        <h2>Contact Me</h2>
+        <hr />
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 contact-info order-lg-2">
+                <p><a href="mailto:nacho.albiol88@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-envelope fa-fw w3-xxlarge"></i></a>
+                    Email: nacho.albiol88@gmail.com
+                </p>
+                <p><a href="https://wa.me/34677246546" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-phone fa-fw w3-xxlarge"></i></a>
+                    Phone: +34 677 246 546
+                </p>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=Barcelona" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fas fa-map-marker-alt fa-fw w3-xxlarge"></i></a>
+                    Barcelona, 08017
+                </p>
+            </div>
+
+            <div class="col-lg-6 col-sm-12 order-lg-1">
+                <iframe id="map" title="Map showing my location" alt="Map with my location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7212831.327218925!2d-6.9392616546514825!3d42.07437280125591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona!5e0!3m2!1ses!2ses!4v1704480205423!5m2!1ses!2ses"
+                    allowFullScreen="" loading="async" referrerPolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div>
+            <p class="get-touch">Lets get in touch. Send me a message:</p>
+            <form class="contact-form" ref={form} onSubmit={sendEmail}>
+                <p><input type="text" placeholder="Write your name..." required name="user_name" /></p>
+                <p><input type="email" placeholder="Write your email..." required name="user_email" /></p>
+                <p><input type="text" placeholder="What's the subject..." required name="subject" /></p>
+                <p><textarea placeholder="What's your message..." required name="message" rows="4"></textarea></p>
+                <div class="button-container">
+                    <button class="normal-btn" type="submit" value="Send">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="button-text">Send Message</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<footer class="home-page-footer">
+    <div class="footer-logo">
+        <a href="https://ignacioalbiol.tech/" target="_blank" rel="noopener noreferrer"
+            aria-label="Go to IAP Dev Web Page">
+            <img src="./img/logo.png" class="logo-img" alt="IAP Dev Logo" />
+        </a>
+        <p class="logo-text">2024</p>
+    </div>
+</footer>
+
+</html>

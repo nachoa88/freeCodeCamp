@@ -1,0 +1,379 @@
+/*GENERAL STYLE*/
+body {
+    font-family: Georgia, serif;
+    color: black;
+    background-color: whitesmoke;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto !important;
+    padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+hr {
+    border-top: 5px double black;
+    margin-bottom: 30px;
+    transition: border-top 0.5s ease;
+}
+
+/*BUTTONS*/
+.button-text {
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.normal-btn {
+    padding: 12px 24px;
+    border-radius: 5px;
+    color: black;
+    background-color: #d9c48b;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    height: 50px;
+    width: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.normal-btn:hover,
+.normal-btn:focus {
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 0 10px #ffd500, 0 0 15px #ffd500, 0 0 20px #ffb553, 0 0 25px #ff9100, 0 0 30px #ff9100;
+    color: whitesmoke;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #d9c48b;
+    height: 60px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item a {
+    width: 160px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.icon-center {
+    margin-bottom: 0;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.navbar-dropdown {
+    background-color: #d9c48b;
+    border: 2px solid #bfad6e;
+    width: 180px;
+    min-width: 0;
+    /*As bootstrap dropdown minimun is 160px it's necessary to override this with a min-width.*/
+}
+
+/*MOBILE ICON & DROPDOWN STYLE*/
+.custom-icon {
+    font-size: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    background-color: #a9a18a;
+    transition: color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.custom-icon:hover,
+.custom-icon:focus {
+    background-color: rgb(65, 65, 65) !important;
+    box-shadow: 0 0 5px #ffd500, 0 0 10px #ffd500, 0 0 15px #ffb553, 0 0 20px #ffb553;
+    color: whitesmoke !important;
+}
+
+/*HEADER */
+#welcome-section {
+    padding: 64px 16px 0px 16px;
+    text-align: center;
+}
+
+.home-img-medium {
+    padding: 0 15vw;
+    margin-bottom: 25px;
+    max-height: 300px;
+}
+
+#welcome-section h1 {
+    font-weight: bold;
+}
+
+.under-text {
+    margin-bottom: 30px;
+}
+
+.header-icon {
+    font-size: 4vw;
+    color: #d9c48b;
+    padding: 15px;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+@media screen and (max-width: 992px) {
+    .header-icon {
+        font-size: 6vw;
+    }
+}
+
+.header-icon:hover,
+.header-icon:focus {
+    color: rgb(65, 65, 65);
+    text-shadow: 0 0 10px #ffd500, 0 0 15px #ffd500, 0 0 20px #ffb553, 0 0 25px #ff9100, 0 0 30px #ff9100;
+}
+
+.button-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+/*PROJECTS SECTION */
+.portfolio {
+    padding-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CARDS STYLE */
+.card {
+    background: rgb(45, 45, 45) !important; /* Agregar degradé!!! */
+    border: 2px solid #a9a18a !important;
+    color: rgba(250, 250, 250, 0.8) !important;
+    margin-bottom: 1.5rem !important;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-title {
+    font-size: large;
+}
+
+.card-text {
+    height: 160px;
+    /* Default height for large screens*/
+
+    /* Media queries for different screen sizes, px variate a lot because of rows */
+    @media screen and (max-width: 1450px) {
+        height: 200px;
+    }
+
+    @media screen and (max-width: 1200px) {
+        height: 140px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 100px;
+    }
+
+    @media screen and (max-width: 576px) {
+        height: 130px;
+    }
+}
+
+.card-icon {
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+
+/*ABOUT ME*/
+.about-me{
+    padding-top: 70px;
+}
+
+.row {
+    padding-top: 10px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-container:hover {
+    background-color: lightgrey;
+    transform: scale(1.05);
+}
+
+.iconImg {
+    width: 60%;
+    margin-bottom: 5px;
+}
+
+#about-text {
+    margin-bottom: 70px;
+    color: black;
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+}
+
+.skill-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: large;
+    text-align: left;
+}
+
+.skill-text {
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    transition: color 0.5s ease;
+}
+
+/*CONTACT SECTION*/
+.contact-me {
+    padding-top: 70px;
+}
+
+#contact p {
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info i {
+    margin-right: 15px;
+    color: black;
+    font-size: 2rem;
+}
+
+.contact-info i:hover {
+    opacity: 0.5;
+}
+
+#map {
+    border-radius: 5px;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 450px;
+    height: 45vh;
+}
+
+.get-touch {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form p {
+    width: 80%;
+}
+
+/*FOOTER*/
+.home-page-footer {
+    background-color: #a9a18a;
+    transition: background-color 0.5s ease;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+
+.home-page-footer {
+    width: 100%;
+    /* As the picture uses the 40% of the screen, footer needs to use only 60% */
+    margin-left: auto;
+    /* Also, align it to the right, to see that 60% */
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 70px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    margin-left: 20px;
+    margin-bottom: 0px;
+}

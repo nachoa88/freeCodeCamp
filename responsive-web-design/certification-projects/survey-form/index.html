@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Here goes the description of the survey...</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" required
+                placeholder="Enter your name..." /></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" required
+                placeholder="Enter your email..." /></label>
+        <label for="number" id="number-label"> Number: <input id="number" name="number" type="number" min="10" max="20"
+                placeholder="Enter a number..."> </label>
+
+        <label for="dropdown">Here go some options for you to choose:
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+            </select>
+        </label>
+
+        <fieldset>
+            <legend> Are you satisfied? (required)</legend>
+            <label for="yes"><input id="yes" type="radio" name="yes-no" class="inline" checked value="1" /> Yes</label>
+            <label for="no"><input id="no" type="radio" name="yes-no" class="inline" value="2" /> No</label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Select your favourites: </legend>
+            <label for="favorite-1"><input id="favorite-1" type="checkbox" name="favorite-2" value="1" /> Cars</label>
+            <label for="favorite-2"><input id="favorite-2" type="checkbox" name="favorite-2" value="2" /> Moto</label>
+            <label for="favorite-3"><input id="favorite-3" type="checkbox" name="favorite-3" value="3" /> Bicicle</label>
+            <label for="favorite-4"><input id="favorite-4" type="checkbox" name="favorite-4" value="4" /> Plane</label>
+        </fieldset>
+
+        <label for="additional-comments">Additional comments: <textarea id="additional-comments"
+                name="additional-comments" rows="5" cols="40"
+                placeholder="I would like to add some comments about my experience..."></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+
+</body>

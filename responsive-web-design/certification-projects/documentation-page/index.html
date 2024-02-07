@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <header>C# Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#C_sharp_programming_language">C Sharp Programming Language</a></li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+            <li><a class="nav-link" href="#C_sharp_and_Java">C Sharp and Java</a></li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="C_sharp_programming_language">
+            <header>C Sharp Programming Language</header>
+            <article>
+                <p>C# (pronounced "C Sharp") is a modern, object-oriented programming language that was developed by 
+                    Microsoft as part of their .NET platform. It was later approved as a standard by ECMA (ECMA-334) 
+                    and ISO (ISO/IEC 23270). C# is designed for Common Language Infrastructure (CLI).
+                </p>
+                <p> The syntax of C# is highly expressive, yet it is also simple and easy to learn. The curly-brace 
+                    syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Despite its 
+                    similarities to these languages, C# introduces a number of improvements and innovations, 
+                    such as properties and events.
+                </p>
+                <p> The name "C Sharp" was inspired by the musical notation where a sharp indicates that the written 
+                    note should be made a semitone higher in pitch. This is a metaphor for the language's design goal 
+                    to offer a higher level of performance and sophistication than its predecessors, particularly C++.
+                </p>
+                <ul>
+                    <li>C# is fully integrated with the .NET library, providing access to a vast array of 
+                        functionality and making it easy to develop both desktop and web applications.</li>
+                    <li>With C#, you can build a variety of applications, from cloud-based services to 
+                        enterprise software and games.</li>
+                    <li>C# is statically-typed, which means your code will be checked for errors before it gets
+                         built into an app. This makes it easier to catch and fix coding mistakes.</li>
+                    <li>C# supports automatic memory management, which means it handles memory leaks and 
+                        garbage collection for you.</li>
+                </ul>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <article>
+                <p>This guide assumes you have the following basic background:</p>
+
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+                    <li>Some programming experience. If you are new to programming, try
+                        one of the tutorials linked on the main page about JavaScript.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="C_sharp_and_Java">
+            <header>C Sharp and Java</header>
+            <article>
+                <p>
+                    C# and Java are similar in some ways but fundamentally different in some others. 
+                    The C# language resembles Java but has its own unique features like properties, 
+                    indexers, and events.
+                </p>
+
+                <p>
+                    In contrast to Java's compile-time system of classes built by declarations, C# 
+                    supports a runtime system based on a small number of data types representing numeric, 
+                    Boolean, and string values. C# has a class-based object model and supports functions 
+                    without any special declarative requirements. Functions can be properties of objects, 
+                    executing as methods.
+                </p>
+                <p>
+                    C# is a statically-typed language compared to Java. You do not have to declare all 
+                    variables, classes, and methods. You have to be concerned with whether methods are 
+                    public, private, or protected, and you have to implement interfaces. Variables, 
+                    parameters, and function return types are explicitly typed.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+            <article>
+                To get started with writing C#, open your IDE and write your first "Hello world" C# code:
+                <code>class Program { static void Main(string[] args) { Console.WriteLine("Hello World!"); } }</code>
+
+                Run the code to see it unfold in your IDE!
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <p>
+                You use variables as symbolic names for values in your application. The names of variables, 
+                called identifiers, conform to certain rules.
+            </p>
+            <p>
+                A C# identifier must start with a letter or underscore (_); subsequent characters can also 
+                be digits (0-9). Because C# is case sensitive, letters include the characters "A" through "Z" 
+                (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+        </section>
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+            <article>
+                You can declare a variable in C# as follows::
+                <p>
+                    With the keyword int. For example, <code>int x = 42.</code> 
+                    This syntax can be used to declare both local and global variables, always integer.
+                </p>
+                <p>
+                    With the keyword string. For example, <code>string str = "Hello World";</code> 
+                    This syntax can be used to declare both local and global variables, always string.
+                </p>
+                
+                <p>
+                    With the keyword bool. For example, <code>bool isTrue = true;</code> 
+                    This syntax can be used to declare both local and global variables, always boolean.
+                </p>
+                
+                <p>
+                    With the keyword float. For example, <code>float pi = 3.14f;</code> 
+                    This syntax can be used to declare both local and global variables, always float.
+                </p>
+                <p>
+                    By simply assigning it a value. For example,
+                    <code>x = 42.</code> This always declares a global variable. It
+                    generates a strict C# warning. You shouldn't use this
+                    variant.
+                </p>
+                <p>
+                    In C#, the type of the variable must be declared when it is created, 
+                    and it cannot be changed later (i.e., C# is a statically typed language).
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation on this page is taken from the official Microsoft C# documentation.
+                        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">MDN</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

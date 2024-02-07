@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <img id="header-img" src="https://www.creativefabrica.com/wp-content/uploads/2020/09/02/Auto-car-logo-design-Graphics-5237528-1.jpg" alt="Electric Car Logo">
+            <span class="logo-text">Electric Cars</span>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>Welcome to our Electric Car Landing Page!</h1>
+        <p>Experience the future of transportation with our state-of-the-art electric car.
+            It's not just a car, it's a lifestyle.</p>
+    </section>
+
+    <div class="container">
+        <section id="features">
+            <div class="grid">
+                <div class="icon"><i class="fas fa-3x fa-tree"></i></div>
+                <div class="desc">
+                    <h2>Zero Emissions</h2>
+                    <p>Our electric car produces no harmful emissions – good for you,
+                        great for the environment.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon"><i class="fas fa-3x fa-gas-pump"></i></div>
+                <div class="desc">
+                    <h2>Fast Charging</h2>
+                    <p>Get up to 80% charge in just 30 minutes with our
+                        super fast charging stations.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fas fa-3x fa-battery-full" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Long Range</h2>
+                    <p>Travel up to 500 miles on a single charge.</p>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="icon">
+                    <i class="fa fa-3x fa-car" aria-hidden="true"></i>
+                </div>
+                <div class="desc">
+                    <h2>Autonomous Driving</h2>
+                    <p>Sit back and relax with our advanced self-driving technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tJfERzrG-D8" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                frameborder="0" allowfullscreen=""></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="product" id="basic">
+                <div class="model">Basic Model</div>
+                <h2>$35,000</h2>
+                <ol>
+                    <li>Range: 263 miles</li>
+                    <li>Top Speed: 140 mph</li>
+                    <li>0-60 mph: 5.3 seconds</li>
+                    <li>Autopilot: Available as an upgrade</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="sport">
+                <div class="model">Sport Model</div>
+                <h2>$50,000</h2>
+                <ol>
+                    <li>Range: 358 miles</li>
+                    <li>Top Speed: 145 mph</li>
+                    <li>0-60 mph: 4.2 seconds</li>
+                    <li>Autopilot: Included</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="full">
+                <div class="model">Full Model</div>
+                <h2>$75,000</h2>
+                <ol>
+                    <li>Range: 390 miles</li>
+                    <li>Top Speed: 163 mph</li>
+                    <li>0-60 mph: 3.1 seconds</li>
+                    <li>Autopilot: Included</li>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" required
+                        placeholder="Enter your name..." /></label>
+                <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email"
+                        required placeholder="Enter your email..." /></label>
+                <label for="additional-comments">Additional comments: <textarea id="additional-comments"
+                        name="additional-comments" rows="5" cols="40"
+                        placeholder="I would like to add some comments about my experience..."></textarea>
+                </label>
+                <input type="submit" value="Submit" id="submit" />
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>
