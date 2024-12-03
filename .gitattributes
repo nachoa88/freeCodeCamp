@@ -1,0 +1,14 @@
+# Enforce LF line endings for all text files
+* text=auto eol=lf
+
+# Specify diff settings for different file types
+*.css diff=css
+*.html diff=html
+*.js diff=javascript
+*.json diff=json
+*.md diff=markdown
+
+# Ignore certain files when exporting
+/.github export-ignore
+CHANGELOG.md export-ignore
+.styleci.yml export-ignore
