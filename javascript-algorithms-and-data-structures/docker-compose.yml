@@ -1,0 +1,10 @@
+services:
+  react-app:
+    container_name: javascript
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/javascript-algorithms-and-data-structures
+    ports:
+      - "3000:3000"
