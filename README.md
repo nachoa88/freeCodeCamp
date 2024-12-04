@@ -43,7 +43,7 @@ Here is a list of projects that have been completed:
 9. Football Team Cards
 10. ToDo App
 11. Decimal to Binary Converter
-12. Spam Filter (in progress)
+12. Spam Filter
 13. Number Sorter
 14. Statistics Calculator
 15. Spreadsheet
@@ -56,4 +56,4 @@ Here is the list of certification projects that have been completed:
 
 1. Palindrome Checker
 2. Roman Numeral Converter
-3. 
+3. Telephone Number Validator (in progress)
