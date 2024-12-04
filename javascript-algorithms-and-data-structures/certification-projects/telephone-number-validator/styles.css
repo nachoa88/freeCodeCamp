@@ -1,0 +1,71 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #042d35;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+a:hover {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.iapdev-logo {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: #0f5e72;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #46cfc8;
+  color: #072d36;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #072d36;
+  color: whitesmoke;
+}
+
+#results-div {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  min-height: 24px;
+}
