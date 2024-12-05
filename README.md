@@ -47,7 +47,8 @@ Here is a list of projects that have been completed:
 13. Number Sorter
 14. Statistics Calculator
 15. Spreadsheet
-16. 
+16. Shopping Cart
+17. Platformer Game (in progress)
 
 
 ### Certification Projects
@@ -56,4 +57,4 @@ Here is the list of certification projects that have been completed:
 
 1. Palindrome Checker
 2. Roman Numeral Converter
-3. Telephone Number Validator (in progress)
+3. Telephone Number Validator
