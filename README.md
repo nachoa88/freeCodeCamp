@@ -48,7 +48,8 @@ Here is a list of projects that have been completed:
 14. Statistics Calculator
 15. Spreadsheet
 16. Shopping Cart
-17. Platformer Game (in progress)
+17. Platformer Game
+18. Dice Game (in progress)
 
 
 ### Certification Projects
