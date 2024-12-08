@@ -16,8 +16,7 @@ let cid = [
 document.addEventListener("DOMContentLoaded", () => {
   const cash = document.getElementById("cash");
   const purchaseBtn = document.getElementById("purchase-btn");
-  const changeDue = document.getElementById("change-due");
-  const status = document.getElementById("status");
+  const changeDueDiv = document.getElementById("change-due");
   const priceDisplay = document.getElementById("price");
   const cashDrawer = document.getElementById("cash-drawer");
   // The currency unit in order to calculate the change.
@@ -42,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .join("");
   cashDrawer.innerHTML = drawerHTML;
 
-  
   const calculateChange = (price, cash, cid) => {
     let result = [];
     // Due is the amount of change that needs to be returned to the customer.
@@ -52,51 +50,51 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calculate total cash in drawer
     const totalCID = cid.reduce((sum, [, amount]) => sum + amount, 0);
 
+    console.log("Change needed:", changeDue);
+
     // Handle status based on remaining changeDue
     if (totalCID < changeDue) {
-      status.textContent = "Status: INSUFFICIENT_FUNDS";
-      changeDue.textContent = "";
+      // status.textContent = "Status: INSUFFICIENT_FUNDS";
+      changeDueDiv.textContent = "Status: INSUFFICIENT_FUNDS";
       return;
     }
 
     if (totalCID === changeDue) {
-      status.textContent = "Status: CLOSED";
-      result = cid;
+      changeDueDiv.textContent =
+        "Status: CLOSED " +
+        cid
+          .filter(([, amount]) => amount > 0)
+          .map(([unit, amount]) => `${unit}: $${amount.toFixed(2)}`)
+          .join(" ");
+      return;
     } else {
       // Calculate change using each denomination
       for (const [unit, drawerAmount] of drawer) {
         const unitValue = currencyUnit[unit];
         let unitSum = 0;
 
-        // Calculate maximum possible units we can use
-        const maxUnits = Math.floor(changeDue / unitValue);
-        // Calculate actual units based on what's available
-        const availableUnits = Math.min(
-          maxUnits,
-          Math.floor(drawerAmount / unitValue)
-        );
+        // Keep giving this denomination while possible
+        while (changeDue >= unitValue && drawerAmount >= unitSum + unitValue) {
+          unitSum = Number((unitSum + unitValue).toFixed(2));
+          changeDue = Number((changeDue - unitValue).toFixed(2));
+        }
 
-        if (availableUnits > 0) {
-          unitSum = Number((availableUnits * unitValue).toFixed(2));
-          changeDue = Number((changeDue - unitSum).toFixed(2));
+        if (unitSum > 0) {
           result.push([unit, unitSum]);
         }
       }
 
       if (changeDue > 0) {
         status.textContent = "Status: INSUFFICIENT_FUNDS";
-        changeDue.textContent = "";
         return;
       }
-
-      status.textContent = "Status: OPEN";
     }
     // Format change output
     const changeString = result
       .filter(([, amount]) => amount > 0)
-      .map(([unit, amount]) => `${unit}: $${amount}`)
+      .map(([unit, amount]) => `${unit}: $${amount.toFixed(2)}`)
       .join(" ");
-    changeDue.textContent = `${status.textContent} ${changeString}`;
+    changeDueDiv.textContent = "Status: OPEN " + `${changeString}`;
   };
 
   purchaseBtn.addEventListener("click", () => {
@@ -108,9 +106,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (price === cashAmount) {
-      status.textContent = "Status: CLOSED";
-      changeDue.innerHTML = "No change due - customer paid with exact cash";
+    if (cashAmount === price) {
+      changeDueDiv.textContent =
+        "No change due - customer paid with exact cash";
       return;
     }
 

@@ -59,4 +59,4 @@ Here is the list of certification projects that have been completed:
 1. Palindrome Checker
 2. Roman Numeral Converter
 3. Telephone Number Validator
-4. Cash Register (in progress)
+4. Cash Register

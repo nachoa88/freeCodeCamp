@@ -19,6 +19,17 @@ body {
   padding: var(--spacing);
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing);
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
 .container {
   background-color: var(--bg-light);
   padding: calc(var(--spacing) * 2);
@@ -91,7 +102,6 @@ button:hover {
   background-color: var(--accent-dark);
 }
 
-#status,
 #change-due {
   padding: calc(var(--spacing) / 1.5);
   margin: calc(var(--spacing) / 2) 0;
