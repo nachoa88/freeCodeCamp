@@ -49,7 +49,7 @@ Here is a list of projects that have been completed:
 15. Spreadsheet
 16. Shopping Cart
 17. Platformer Game
-18. Dice Game (in progress)
+18. Dice Game
 
 
 ### Certification Projects
@@ -59,3 +59,4 @@ Here is the list of certification projects that have been completed:
 1. Palindrome Checker
 2. Roman Numeral Converter
 3. Telephone Number Validator
+4. Cash Register (in progress)

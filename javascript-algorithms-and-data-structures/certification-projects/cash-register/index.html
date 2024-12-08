@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="http://www.ignacioalbiol.es">
+        <img class="logo" src="./img/logo_w.png" alt="IAP-Dev Logo" />
+      </a>
+      <h1>Cash Register</h1>
+
+      <div class="transaction">
+        <div id="status"></div>
+        <div class="input-group">
+          <label for="cash">Enter cash from customer:</label>
+          <input id="cash" type="number" min="0" step="0.01" />
+          <button id="purchase-btn">Purchase</button>
+        </div>
+        <div class="change">
+          <h2>Change Due</h2>
+          <div id="change-due"></div>
+        </div>
+      </div>
+
+      <div class="price-display">
+        <h2>Price to Pay</h2>
+        <span id="price"></span>
+      </div>
+
+      <div class="drawer">
+        <h2>Cash in Drawer</h2>
+        <div id="cash-drawer" class="denomination"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

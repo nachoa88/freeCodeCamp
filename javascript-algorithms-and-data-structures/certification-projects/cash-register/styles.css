@@ -1,0 +1,100 @@
+:root {
+  --bg-dark: #042d35;
+  --bg-medium: #084456;
+  --bg-light: #0f5e72;
+  --accent: #2ecc71;
+  --accent-dark: #27ae60;
+  --radius: 8px;
+  --spacing: 15px;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--spacing);
+}
+
+.container {
+  background-color: var(--bg-light);
+  padding: calc(var(--spacing) * 2);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  margin-bottom: var(--spacing);
+}
+
+.price-display,
+.drawer,
+.transaction {
+  background-color: var(--bg-medium);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  margin-bottom: var(--spacing);
+}
+
+.price-display span {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.denomination {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) / 2);
+}
+
+.denomination span {
+  background-color: var(--bg-light);
+  padding: calc(var(--spacing) / 2);
+  border-radius: var(--radius);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) / 2);
+  margin: var(--spacing) 0;
+}
+
+input {
+  padding: calc(var(--spacing) / 1.5);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: calc(var(--spacing) / 1.5);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--accent-dark);
+}
+
+#status,
+#change-due {
+  padding: calc(var(--spacing) / 1.5);
+  margin: calc(var(--spacing) / 2) 0;
+  background-color: var(--bg-medium);
+  border-radius: var(--radius);
+}
