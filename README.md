@@ -50,6 +50,8 @@ Here is a list of projects that have been completed:
 16. Shopping Cart
 17. Platformer Game
 18. Dice Game
+19. Authors Page
+20. Forum Leaderboard (in progress)
 
 
 ### Certification Projects
