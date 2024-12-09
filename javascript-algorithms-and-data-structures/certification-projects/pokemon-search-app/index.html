@@ -13,7 +13,60 @@
           <img class="logo" src="./img/logo_w.png" alt="IAP-Dev Logo" />
         </a>
       </div>
+
       <h1>Pokémon Search App</h1>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          class="search"
+          placeholder="Search Pokémon..."
+          required
+        />
+        <button id="search-button" class="search-button">Search</button>
+      </div>
+
+      <div class="pokemon-container" id="pokemon-container">
+        <div class="pokemon-header">
+          <div id="pokemon-id"></div>
+          <div id="pokemon-name"></div>
+        </div>
+        <div id="pokemon-image"></div>
+        <div id="types"></div>
+        <div id="weight">
+          <span class="label">Weight: </span>
+          <span class="value"></span>
+        </div>
+        <div id="height">
+          <span class="label">Height: </span>
+          <span class="value"></span>
+        </div>
+        <div id="hp">
+          <span class="label">HP: </span>
+          <span class="value"></span>
+        </div>
+        <div id="attack">
+          <span class="label">Attack: </span>
+          <span class="value"></span>
+        </div>
+        <div id="defense">
+          <span class="label">Defense: </span>
+          <span class="value"></span>
+        </div>
+        <div id="special-attack">
+          <span class="label">Special Attack: </span>
+          <span class="value"></span>
+        </div>
+        <div id="special-defense">
+          <span class="label">Special Defense: </span>
+          <span class="value"></span>
+        </div>
+        <div id="speed">
+          <span class="label">Speed: </span>
+          <span class="value"></span>
+        </div>
+      </div>
     </div>
     <script src="./script.js"></script>
   </body>

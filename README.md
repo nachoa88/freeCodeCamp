@@ -26,7 +26,7 @@ Here is the list of certification projects that have been completed:
 5. Portfolio (final project)
 
 ## JavaScript Algorithms and Data Structures
-:hourglass_flowing_sand: Work in progress.
+:white_check_mark: Completed.
 
 ### Projects
 
@@ -62,4 +62,4 @@ Here is the list of certification projects that have been completed:
 2. Roman Numeral Converter
 3. Telephone Number Validator
 4. Cash Register
-5. Pokémon Search App (in progress)
+5. Pokémon Search App (final project)
