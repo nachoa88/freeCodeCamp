@@ -51,7 +51,7 @@ Here is a list of projects that have been completed:
 17. Platformer Game
 18. Dice Game
 19. Authors Page
-20. Forum Leaderboard (in progress)
+20. Forum Leaderboard
 
 
 ### Certification Projects
@@ -62,3 +62,4 @@ Here is the list of certification projects that have been completed:
 2. Roman Numeral Converter
 3. Telephone Number Validator
 4. Cash Register
+5. Pokémon Search App (in progress)
